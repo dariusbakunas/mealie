@@ -1,7 +1,7 @@
 build:
   docker:
-    web: docker/frontend.Dockerfile
-    worker: docker/api.Dockerfile
+    web: frontend.Dockerfile.heroku
+    worker: api.Dockerfile.heroku
   config:
     API_URL: http://mealie-api:9000
     THEME_LIGHT_PRIMARY: #E58325

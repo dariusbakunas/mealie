@@ -1,7 +1,6 @@
 build:
   docker:
-    web: frontend.Dockerfile.heroku
-    worker: api.Dockerfile.heroku
+    web: omni.Dockerfile
   config:
     API_URL: http://mealie-api:9000
     THEME_LIGHT_PRIMARY: #E58325

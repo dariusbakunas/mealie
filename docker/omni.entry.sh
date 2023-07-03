@@ -8,6 +8,7 @@
 # Get PUID/PGID
 PUID=${PUID:-911}
 PGID=${PGID:-911}
+NODE_PORT=${PORT:3000}
 
 add_user() {
     groupmod -o -g "$PGID" abc
@@ -56,4 +57,4 @@ fi
 
 # ------------------------------
 # Start Frontend Nuxt Server
-cd /app/frontend && yarn start -p 3000
+cd /app/frontend && yarn start -p "${NODE_PORT}"

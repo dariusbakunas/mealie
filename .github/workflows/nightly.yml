@@ -46,6 +46,7 @@ jobs:
   deploy-demo:
     runs-on: ubuntu-latest
     name: Deploy Demo
+    if: false
     needs:
       - build-release
     steps:
